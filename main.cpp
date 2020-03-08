@@ -22,5 +22,5 @@ int main()
 
 void Tax::output()
 {
-	cout << "The final paymet is " << finalAmount;
+	cout << "The final paymet is $" << finalAmount;
 }

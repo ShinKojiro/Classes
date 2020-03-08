@@ -1,11 +1,11 @@
 #pragma once
 class Tax
 {
-
 public:
-	void tax();
-	double amount;
-	double taxAmount;
-
+	void output();
+	double payment;
+	double taxRate;
+	double finalAmount;
 };
+
 

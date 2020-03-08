@@ -15,11 +15,14 @@ int main()
 	cout << "\nEnter the payment made: ";
 	cin >> amount.payment;
 
-	amount.finalAmount = amount.payment + (amount.payment * (amount.taxRate / 100));
-
-	cout << amount.finalAmount;
+	amount.calculate();
+	amount.output();
 }
 
+void Tax::calculate()
+{
+	finalAmount = payment + (payment * (taxRate / 100));
+}
 void Tax::output()
 {
 	cout << "The final paymet is $" << finalAmount;

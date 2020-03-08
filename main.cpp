@@ -1,10 +1,12 @@
 #include <string>
 #include <iostream>
 #include <cmath>
-#include <cstlib>
+#include <cstdlib>
+#include "Tax.h"
 
 using namespace std;
 
-int main() {
-
+int main() 
+{
+	
 }

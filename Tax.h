@@ -10,5 +10,3 @@ public:
 	double finalAmount;
 };
 
-
-

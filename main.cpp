@@ -18,7 +18,6 @@ int main()
 	amount.calculate();
 	amount.output();
 }
-
 void Tax::calculate()
 {
 	finalAmount = payment + (payment * (taxRate / 100));

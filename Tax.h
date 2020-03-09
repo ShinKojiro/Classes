@@ -23,7 +23,7 @@ void Tax::set(double p, double t)
 {
 	payment = p;
 	taxRate = t;
-	finalAmount = getPayment() + (getPayment() * (getTaxRate() * 100));
+
 }
 
 double Tax::getPayment()

@@ -7,22 +7,29 @@
 using namespace std;
 
 int main() 
-{
-	Tax amount;
+{	
+	double newPayment;
+	double newTaxRate;
+	Tax newAmount;
+	cout << "This is a simple sales tax calculator.\n";
+
+	//newAmount.input();
 	cout << "Enter the current sales tax rate: ";
-	cin >> amount.taxRate;
+	cin >> newTaxRate;
 
 	cout << "\nEnter the payment made: ";
-	cin >> amount.payment;
+	cin >> newPayment;
+	newAmount.set(newPayment, newTaxRate);
+	newAmount.output();
+	
+}
 
-	amount.calculate();
-	amount.output();
-}
-void Tax::calculate()
-{
-	finalAmount = payment + (payment * (taxRate / 100));
-}
+//void Tax::input()
+//{
+//	
+//}
+
 void Tax::output()
 {
-	cout << "The final paymet is $" << finalAmount;
+	cout << "The final amount is $" << getFinalAmount();
 }
